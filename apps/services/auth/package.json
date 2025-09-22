@@ -1,0 +1,10 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "packageManager": "pnpm@10.13.1"
+}
