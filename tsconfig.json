@@ -1,8 +1,12 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@salaty/common": ["packages/common"]
+    },
     // File Layout
-    // "rootDir": "./src",
+    // "rootDir": "./",
     // "outDir": "dist",
 
     // Environment Settings
