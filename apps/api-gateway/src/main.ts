@@ -36,7 +36,7 @@ const limiter = rateLimit({
     }
 
     // fallback to IP for unauthenticated users
-    // return req.ip // vulnerable
+    // return req.ip -> vulnerable
     return ipKeyGenerator(req.ip as string); // better
   },
 });

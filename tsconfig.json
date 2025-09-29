@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@salaty/common": ["packages/common"]
+      "@salaty/common": ["packages/common/src"]
     },
     // File Layout
     // "rootDir": "./",

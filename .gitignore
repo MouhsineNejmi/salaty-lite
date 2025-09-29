@@ -1,2 +1,19 @@
+# dependencies
 node_modules/
+pnpm-lock.yaml
 .turbo
+
+# build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+pnpm-debug.log*
+
+# environment
+.env
+.env.local
+.env.development
+.env.test
+.env.production
