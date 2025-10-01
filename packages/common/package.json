@@ -12,7 +12,13 @@
     "typescript": "^5.0.0"
   },
   "exports": {
-    ".": "./dist/index.js",
-    "./prisma": "./dist/lib/prisma/index.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./prisma": {
+      "types": "./dist/libs/prisma/index.d.ts",
+      "default": "./dist/libs/prisma/index.js"
+    }
   }
 }
