@@ -31,6 +31,20 @@ export class ValidationError extends AppError {
   }
 }
 
+// Bad Request Error
+export class BadRequestError extends AppError {
+  constructor(message = 'Bad request') {
+    super(message, 400);
+  }
+}
+
+// Conflict Error
+export class ConflictError extends AppError {
+  constructor(message = 'Resource already exists') {
+    super(message, 409);
+  }
+}
+
 // Authentication Error
 export class AuthError extends AppError {
   constructor(message = 'Unauthorized') {
