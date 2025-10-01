@@ -10,5 +10,8 @@
   "devDependencies": {
     "@salaty/typescript-config": "workspace:*",
     "typescript": "^5.0.0"
+  },
+  "exports": {
+    "./prisma": "./dist/lib/prisma/index.js"
   }
 }
