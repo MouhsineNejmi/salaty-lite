@@ -8,6 +8,7 @@
   },
   "packageManager": "pnpm@10.13.1",
   "dependencies": {
+    "@salaty/logger": "workspace:*",
     "axios": "^1.12.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
