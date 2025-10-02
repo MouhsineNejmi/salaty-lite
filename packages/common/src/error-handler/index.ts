@@ -59,6 +59,13 @@ export class ForbiddenError extends AppError {
   }
 }
 
+// Rate Limit Error (If user exceeds API limits)
+export class RateLimitError extends AppError {
+  constructor(message = 'Too many requests, please try again!') {
+    super(message, 429);
+  }
+}
+
 // Database Error (for Mongoose/Postgres Errors)
 export class DatabaseError extends AppError {
   constructor(message = 'Database error', details?: any) {
@@ -66,9 +73,9 @@ export class DatabaseError extends AppError {
   }
 }
 
-// Rate Limit Error (If user exceeds API limits)
-export class RateLimitError extends AppError {
-  constructor(message = 'Too many requests, please try again!') {
-    super(message, 429);
+// Proxy Error
+export class ServiceUnavailableError extends AppError {
+  constructor(message = 'Service unavailable', details?: any) {
+    super(message, 503, true, details);
   }
 }

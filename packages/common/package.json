@@ -4,12 +4,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "tsc --watch",
     "build": "tsc -p tsconfig.json"
   },
   "devDependencies": {
-    "@salaty/typescript-config": "workspace:*",
-    "typescript": "^5.0.0"
+    "@salaty/typescript-config": "workspace:*"
   },
   "exports": {
     ".": {
@@ -19,6 +17,10 @@
     "./prisma": {
       "types": "./dist/libs/prisma/index.d.ts",
       "default": "./dist/libs/prisma/index.js"
+    },
+    "./middlewares": {
+      "types": "./dist/middlewares/index.d.ts",
+      "default": "./dist/middlewares/index.js"
     }
   }
 }
